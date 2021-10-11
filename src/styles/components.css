@@ -1,0 +1,36 @@
+@layer components {
+    .btn {
+        @apply inline-flex space-x-3 items-center justify-center text-white  font-medium focus:outline-none text-base  rounded shadow-sm;
+
+        /* Sizes */
+        &-sm {
+            @apply py-2 px-4;
+        }
+        &-md {
+            @apply py-3 px-4;
+        }
+        &-lg {
+            @apply py-4 px-4;
+        }
+        /* Theme */
+        &-primary {
+            @apply bg-brand-primary hover:bg-brand-primary hover:bg-opacity-80 focus:ring-2 focus:ring-white;
+        }
+        &-secondary {
+            @apply bg-brand-secondary hover:bg-brand-secondary hover:bg-opacity-80 focus:ring-2 focus:ring-white;
+        }
+        &-primary&-outline {
+            @apply border text-brand-primary hover:text-white transition-all duration-100 ease-out border-brand-primary bg-brand-secondary hover:bg-brand-primary;
+        }
+    }
+    input[disabled] {
+        @apply bg-gray-50 text-gray-400;
+    }
+    .form-control {
+        @apply appearance-none border w-full px-4 py-3 text-white focus:outline-none border-brand-secondary placeholder-gray-400 bg-gray-800  rounded focus:ring  focus:ring-brand-primary;
+    }
+
+    .form-error {
+        @apply border-red-500;
+    }
+}

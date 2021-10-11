@@ -1,0 +1,8 @@
+/* ./src/index.css */
+@tailwind base;
+html {
+    @apply font-sans antialiased;
+}
+@tailwind components;
+@import "./components.css";
+@tailwind utilities;
